@@ -39,3 +39,6 @@ class CheckingAccount:
     def debit(self, amt):
         """Subtracts amt from the account's balance"""
         self._balance -= amt
+
+    def __repr__(self):
+        return f'(Account {self.account_number()}, {self.name()}: ${self.balance():.2f})'
