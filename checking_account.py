@@ -6,7 +6,7 @@ class CheckingAccount:
         self._name = name.capitalize()
         self._address = address
         self._account_number = acc_num
-        self._balance = 0
+        self._balance = 0.0
 
     def name(self):
         return self._name
