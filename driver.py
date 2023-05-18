@@ -4,7 +4,8 @@
 from checking_account import CheckingAccount
 
 def print_acc_info(acc_obj):
-    header = f'{acc_obj.name()}: {acc_obj.account_number()}'
+    """Formats and prints info about passed-in CheckingAccount object"""
+    header = f'{acc_obj.name()}: {acc_obj.account_number()}'    
     print(header)
     print('-' * len(header))
     print(f'Current Balance: $ {acc_obj.balance():.2f} \n')
@@ -16,6 +17,7 @@ def main():
     account_1.credit(500)
     account_2.credit(15000)
 
+    print()
     print_acc_info(account_1)
     print_acc_info(account_2)
 
