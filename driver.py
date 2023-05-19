@@ -18,6 +18,12 @@ def main():
     account_2.debit(5745)
 
     print(account_1)
+    print(account_2, '\n')
+
+    account_1.credit(1000000)
+    account_2.debit(55)
+
+    print(account_1)
     print(account_2)
 
 if __name__ == '__main__': main()
